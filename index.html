@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Control Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form action="" method="POST" class="form">
+		<strong id="title_form">LOGIN</strong>
+		<input type="text" name="mail" id="mail" placeholder="Adresse mail" title="Adresse mail valide">
+		<em class="text_error mail">Entrez une adresse mail valide.</em>
+		<input type="password" name="password" id="pass" placeholder="Mot de passe">
+		<em class="text_error pass">( Entre 6 et 20 caractères )</em>
+
+		<div class="session_remember">
+			<input type="checkbox" name="session" id="session">
+			<label for="session"><span id="span_session"></span>Se souvenir de moi ?</label>
+		</div>
+
+		<button id="submit">Valider</button>
+	</form>
+
+	<script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
