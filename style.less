@@ -34,14 +34,19 @@ body{
 		text-align: center;
 		font-weight: 700;
 		color: #292929;
+		background-repeat: no-repeat;
+		background-position: right 50%;
+		padding-right: 35px;
 
 		&.error{
 			border: 1px solid #C55;
 			color: #C55;
+			background-image: url('invalid.png');
 		}
 		&.success{
-			border: 1px solid #5C5;
-			color: #5C5;
+			border: 1px solid #5A5;
+			color: #5A5;
+			background-image: url('valid.png');
 		}
 
 		&:hover, &:focus{
